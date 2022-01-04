@@ -268,7 +268,7 @@
     padding: 24px 0;
   }
 
-  &-option h4 {
+  &-option h2 {
     opacity: 0.25;
   }
 
@@ -294,7 +294,7 @@
   color: $color-dark-cyan;
 }
 
-.change.form-side-option h4 {
+.change.form-side-option h2 {
   opacity: 1;
 }
 // End of Form Side Menu Styles
@@ -383,7 +383,7 @@
     background-color: $color-dark-cyan;
   }
 
-  input:checked ~ .form-selection-btn h4 {
+  input:checked ~ .form-selection-btn h3 {
     color: #fff;
   }
 
