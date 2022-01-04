@@ -2105,7 +2105,7 @@ body {
   padding: 24px 0;
 }
 
-.form-side-option h4 {
+.form-side-option h2 {
   opacity: 0.25;
 }
 
@@ -2130,7 +2130,7 @@ body {
   color: #0e8784;
 }
 
-.change.form-side-option h4 {
+.change.form-side-option h2 {
   opacity: 1;
 }
 
@@ -2237,7 +2237,7 @@ body {
   background-color: #0e8784;
 }
 
-.form-selection input:checked ~ .form-selection-btn h4 {
+.form-selection input:checked ~ .form-selection-btn h3 {
   color: #fff;
 }
 
