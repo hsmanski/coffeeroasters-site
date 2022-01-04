@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Fraunces:wght@700;900&display=swap");
+
+// font-family: 'Barlow', sans-serif;
+// font-family: 'Fraunces', serif;
+
+.title-alternate-big {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 150px;
+  text-transform: lowercase;
+  background: linear-gradient(to bottom, #e2e2df 30%, #fefcf7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.text {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: $color-dark-grey-blue;
+  opacity: 0.8;
+}
+
+.nav-text {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.92px;
+  text-transform: uppercase;
+  color: $color-grey;
+}
+
+.modal-nav-text {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: $color-dark-grey-blue;
+  text-align: center;
+}
+
+.order-text {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.text-1 {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: $color-dark-grey-blue;
+}
+
+.text-2 {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: $color-dark-grey-blue;
+}
+
+.text-3 {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: $color-dark-grey-blue;
+}
+
+.text-4 {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: $color-dark-grey-blue;
+}

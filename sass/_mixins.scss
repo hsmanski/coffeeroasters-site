@@ -1,0 +1,20 @@
+@mixin hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@mixin visible {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+// @mixin place-image($image) {
+//   background: {
+//     image: $image;
+//     repeat: no-repeat;
+//     position: center;
+//     size: cover;
+//   }
+// }

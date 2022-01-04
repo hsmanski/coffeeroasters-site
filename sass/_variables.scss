@@ -1,0 +1,27 @@
+$color-dark-cyan: #0e8784;
+$color-dark-grey-blue: #333d4b;
+$color-pale-orange: #fdd6ba;
+$color-light-cream-bg: #fefcf7;
+$color-grey: #83888f;
+
+$color-btn-default: #0e8784;
+$color-btn-hover: #66d2cf;
+$color-btn-disabled: #e2dedb;
+
+$color-selection-default: #f4f1eb;
+$color-selection-hover: #fdd6ba;
+$color-selection-active: #0e8784;
+
+// Media Queries
+$layout-breakpoint-large-tablet: 1115px;
+$layout-breakpoint-tablet: 768px;
+$layout-breakpoint-small-tablet: 600px;
+$layout-breakpoint-phone: 375px;
+
+// Hidden Class
+.hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+}

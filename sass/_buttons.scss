@@ -1,0 +1,103 @@
+// Nav & Footer Button Styles
+.btn {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-btn:hover {
+  color: $color-dark-grey-blue;
+}
+
+.nav-btn-2 {
+  padding: 0 32px;
+}
+
+.footer-btn:hover {
+  color: $color-light-cream-bg;
+}
+
+.footer-btn-2 {
+  padding: 0 32px 0 33px;
+
+  @media (max-width: $layout-breakpoint-phone) {
+    padding: 24px 0 24px 0;
+  }
+}
+// Nav & Footer Button Styles
+
+// Main Button Styles
+.btn-main {
+  width: 217px;
+  height: 56px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  background-color: $color-btn-default;
+
+  font-family: Fraunces;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: $color-light-cream-bg;
+
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn-main:hover {
+  background-color: $color-btn-hover;
+}
+
+.btn-link-text {
+  font-family: Fraunces;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: $color-light-cream-bg;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-disabled {
+  background-color: $color-btn-disabled;
+}
+// End of Main Button Styles
+
+// Selection Button Styles
+.selection {
+  width: 228px;
+  height: 250px;
+  background-color: $color-selection-default;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-selection-hover;
+  }
+
+  &:active {
+    background-color: $color-selection-active;
+  }
+
+  &:active .selection-title,
+  &:active .selection-text {
+    color: #fff;
+  }
+
+  &-text {
+    opacity: 1;
+  }
+}
+// End of Selection Button Styles
+
+// Dropdown Button Styles

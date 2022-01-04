@@ -1,0 +1,510 @@
+
+// Heading Section Styles
+.home-heading {
+  margin: 43.44px 80px 0 80px;
+  background-image: url(../assets/home/desktop/image-hero-coffeepress.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  border-radius: 10px;
+  padding: 117px 0 0 85px;
+
+  @media (max-width: $layout-breakpoint-tablet) {
+    margin: 53px 40px 0 39px;
+    background-image: url(../assets/home/tablet/image-hero-coffeepress.jpg);
+    height: 500px;
+    padding: 104px 0 0 58px;
+  }
+
+  @media (max-width: $layout-breakpoint-small-tablet) {
+    padding: 104px 0 0 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+  }
+
+  @media (max-width: $layout-breakpoint-phone) {
+    margin: 40px 24px 0 24px;
+    background-image: url(../assets/home/mobile/image-hero-coffeepress.jpg);
+  }
+
+  &-text-box {
+    width: 493px;
+    height: 367px;
+
+    @media (max-width: $layout-breakpoint-tablet) {
+      width: 398px;
+      height: 292px;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      width: 279px;
+      height: 301px;
+    }
+  }
+
+  &-title {
+    color: $color-light-cream-bg;
+    margin-bottom: 32px;
+
+    @media (max-width: $layout-breakpoint-tablet) {
+      font-size: 48px;
+      line-height: 48px;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  &-text {
+    color: $color-light-cream-bg;
+    padding-right: 48px;
+    margin-bottom: 56px;
+
+    @media (max-width: $layout-breakpoint-tablet) {
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 40px;
+      padding-right: 0;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      margin-bottom: 39px;
+      text-align: center;
+    }
+  }
+}
+// End of Heading Section Styles
+
+// Collection Section Styles
+.collection {
+  width: 100vw;
+  text-align: center;
+  margin-top: 200px;
+
+  @media (max-width: $layout-breakpoint-small-tablet) {
+    margin-top: 120px;
+  }
+
+  &-title {
+    @media (max-width: $layout-breakpoint-large-tablet) {
+      font-size: 96px;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      font-size: 40px;
+    }
+  }
+
+  &-coffees {
+    width: 100%;
+    transform: translateY(-73px);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 164px 0 165px;
+
+    @media (max-width: $layout-breakpoint-large-tablet) {
+      transform: translateY(-47px);
+      padding: 0 84px 0 84px;
+      justify-content: center;
+    }
+
+    @media (max-width: $layout-breakpoint-tablet) {
+      padding: 0 39px 0 40px;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      transform: translateY(0);
+      padding: 0 46px 0 47px;
+    }
+  }
+
+  &-coffee {
+    width: 255px;
+    text-align: center;
+
+    @media (max-width: $layout-breakpoint-large-tablet) {
+      width: 573px;
+    }
+
+    @media (max-width: $layout-breakpoint-tablet) {
+      text-align: left;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      text-align: center;
+    }
+  }
+
+  &-coffee-img {
+    width: 256px;
+    height: 193px;
+    margin-bottom: 71.55px;
+
+    @media (max-width: $layout-breakpoint-large-tablet) {
+      float: left;
+      margin-right: 35px;
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      width: 200px;
+      height: 151px;
+      float: none;
+      margin: 24px 0 24px 0;
+    }
+  }
+
+  &-coffee-title {
+    margin-bottom: 24px;
+
+    @media (max-width: $layout-breakpoint-large-tablet) {
+      margin-bottom: 16px;
+      margin-top: 15px;
+    }
+  }
+
+  &-coffee-text {
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      margin-bottom: 24px;
+    }
+  }
+}
+// End of Collection Section Styles
+
+// Choose Us Section Styles
+.choose-us {
+  height: 728px;
+  padding: 0 80px;
+  margin-top: 176px;
+
+  @media (max-width: $layout-breakpoint-large-tablet) {
+    height: 863px;
+  }
+
+  @media (max-width: $layout-breakpoint-tablet) {
+    padding: 0 40px;
+    margin-top: 112px;
+  }
+
+  @media (max-width: $layout-breakpoint-small-tablet) {
+    height: 1499px;
+    padding: 0 24px;
+    margin-top: 98px;
+  }
+
+  &-banner {
+    height: 577px;
+    background-color: #2c343e;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $layout-breakpoint-large-tablet) {
+      height: 573px;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      height: 902px;
+    }
+  }
+
+  &-text-box {
+    width: 540px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+    @media (max-width: $layout-breakpoint-large-tablet) {
+      margin-top: 56px;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      width: 279px;
+      margin-top: 64px;
+    }
+  }
+
+  &-banner-title {
+    color: $color-light-cream-bg;
+    margin-bottom: 32px;
+
+    @media (max-width: $layout-breakpoint-tablet) {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      font-size: 28px;
+      line-height: 28px;
+    }
+  }
+
+  &-banner-text {
+    color: $color-light-cream-bg;
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+
+  // Card Styles
+  &-cards {
+    transform: translateY(-231px);
+
+    @media (max-width: $layout-breakpoint-large-tablet) {
+      transform: translateY(-298px);
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      transform: translateY(-597px);
+    }
+  }
+
+  &-cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 85px;
+
+    @media (max-width: $layout-breakpoint-large-tablet) {
+      flex-direction: column;
+      padding: 0 57px;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      padding: 0 24px;
+    }
+  }
+
+  &-card {
+    width: 350px;
+    height: 382px;
+    border-radius: 8px;
+    background-color: $color-dark-cyan;
+    text-align: center;
+    padding: 72px 48px 0 47px;
+
+    @media (max-width: $layout-breakpoint-large-tablet) {
+      width: 100%;
+      height: 180px;
+      padding: 41px 48px 0 70px;
+      margin-bottom: 24px;
+
+      text-align: left;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      height: 382px;
+      text-align: center;
+      padding: 72px 33.5px 0 33.5px;
+    }
+  }
+
+  &-card-img {
+    margin-bottom: 56px;
+
+    @media (max-width: $layout-breakpoint-large-tablet) {
+      float: left;
+      margin-right: 55px;
+    }
+
+    @media (max-width: $layout-breakpoint-tablet) {
+      width: 56px;
+      height: 56px;
+      margin-top: 21px;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      float: none;
+      margin-right: 0;
+      margin-top: 0;
+      height: 72px;
+      width: 72px;
+    }
+  }
+
+  &-card-title {
+    margin-bottom: 24px;
+    color: $color-light-cream-bg;
+
+    @media (max-width: $layout-breakpoint-large-tablet) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &-card-text {
+    color: $color-light-cream-bg;
+    opacity: 0.8;
+
+    @media (max-width: $layout-breakpoint-tablet) {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+
+  // End Card Styles
+}
+// End of Choose Us Section Styles
+
+// How it Works Styles
+.steps {
+  padding: 0px 230px 0 165px;
+  margin: 200px 0;
+
+  @media (max-width: $layout-breakpoint-large-tablet) {
+    padding: 0 80px 0 79px;
+  }
+
+  @media (max-width: $layout-breakpoint-tablet) {
+    padding: 0 40px 0 39px;
+  }
+
+  @media (max-width: $layout-breakpoint-small-tablet) {
+    padding: 0 24px 0 24px;
+    margin-top: 120px;
+    text-align: center;
+  }
+
+  &-main-title {
+    color: $color-grey;
+  }
+
+  // Circle Line Divider Styles
+  &-circle-line-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      @include hidden;
+    }
+  }
+
+  &-circle {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: $color-light-cream-bg;
+    border: 2px solid $color-selection-active;
+  }
+
+  &-line {
+    width: 349px;
+    height: 1px;
+    border: 2px solid $color-selection-hover;
+
+    @media (max-width: $layout-breakpoint-large-tablet) {
+      width: 270px;
+    }
+
+    @media (max-width: $layout-breakpoint-tablet) {
+      width: 192px;
+    }
+  }
+  // End of Circle Line Divider Styles
+
+  // Steps Card Styles
+  &-card-wrapper {
+    display: flex;
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 80px;
+      margin-bottom: 23px;
+    }
+  }
+
+  &-card {
+    width: 285px;
+    height: 371px;
+    margin-top: 67px;
+
+    @media (max-width: $layout-breakpoint-tablet) {
+      width: 223px;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      width: 327px;
+      height: 253px;
+      margin-top: 0;
+    }
+  }
+
+  &-card-2 {
+    margin-left: 95px;
+    margin-right: 95px;
+
+    @media (max-width: $layout-breakpoint-large-tablet) {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      margin: 56px 0;
+    }
+  }
+
+  &-number {
+    color: $color-pale-orange;
+    margin-bottom: 38px;
+
+    @media (max-width: $layout-breakpoint-large-tablet) {
+      margin-bottom: 42px;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &-title {
+    padding-right: 30px;
+    margin-bottom: 43px;
+
+    @media (max-width: $layout-breakpoint-tablet) {
+      font-size: 28px;
+      line-height: 32px;
+      padding-right: 0;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &-text {
+    margin-bottom: 64px;
+    opacity: 1;
+
+    @media (max-width: $layout-breakpoint-tablet) {
+      font-size: 15px;
+      line-height: 25px;
+      padding-right: 10.5px;
+    }
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      padding: 0;
+    }
+  }
+  // End of Steps Card Styles
+
+  &-btn {
+    margin-top: 44px;
+
+    @media (max-width: $layout-breakpoint-small-tablet) {
+      margin-top: 56px;
+    }
+  }
+}
+// End of How it Works Styles
