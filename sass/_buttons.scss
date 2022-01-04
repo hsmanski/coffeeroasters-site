@@ -38,6 +38,10 @@
   text-decoration: none;
   background-color: $color-btn-default;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-family: Fraunces;
   font-style: normal;
   font-weight: 900;
