@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Frontend Mentor | Coffeeroasters subscription site</title>
+  </head>
+  <body>
+    <!-- Order Modal -->
+    <div class="order-modal hidden">
+      <div class="order-modal-background"></div>
+      <div class="order-modal-container">
+        <div class="order-modal-heading">
+          <h1 class="text-2 order-modal-title">Order Summary</h1>
+        </div>
+        <div class="order-modal-main">
+          <p class="order-text order-modal-paragraph order-text-default-modal">
+            “I drink my coffee as <span class="how-type">_____</span>, with a
+            <span class="coffee-type">_____</span> type of bean.
+            <span class="amount-type">_____</span> ground ala
+            <span class="grind-type">_____</span> , sent to me
+            <span class="delivery-type">_____</span>.”
+          </p>
+          <p
+            class="
+              order-text order-modal-paragraph order-text-capsule-modal
+              hidden
+            "
+          >
+            “I drink my coffee using <span class="how-type2">_____</span>, with
+            a <span class="coffee-type2">_____</span> type of bean.
+            <span class="amount-type2">_____</span> , sent to me
+            <span class="delivery-type2">_____</span>.”
+          </p>
+          <p class="text order-modal-small-text">
+            Is this correct? You can proceed to checkout or go back to plan
+            selection if something is off. Subscription discount codes can also
+            be redeemed at the checkout.
+          </p>
+          <div class="order-modal-price-btn">
+            <p class="order-modal-price text-3">$<span></span> / mo</p>
+            <button class="btn-main">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Order Modal -->
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-logo-container">
+        <img
+          src="../assets/shared/desktop/logo.svg"
+          alt="Coffee Roasters Logo"
+          class="nav-logo"
+        />
+      </div>
+      <div class="nav-links">
+        <a href="../index.html" class="nav-btn btn nav-text nav-home">home</a>
+        <a href="./about.html" class="nav-btn btn nav-btn-2 nav-text nav-about"
+          >about</a
+        >
+        <a href="./plan.html" class="nav-btn btn nav-text nav-plan"
+          >create your plan</a
+        >
+      </div>
+      <div class="hamburger-menu"></div>
+    </nav>
+    <!-- Navigation Modal -->
+    <div class="modal-nav hidden">
+      <div class="modal-nav-background"></div>
+      <div class="modal-nav-links">
+        <button class="nav-btn btn modal-nav-text modal-nav-home">Home</button>
+        <button
+          class="nav-btn btn modal-nav-btn-2 modal-nav-text modal-nav-about"
+        >
+          About
+        </button>
+        <button class="nav-btn btn modal-nav-text modal-nav-plan">
+          Create Your Plan
+        </button>
+      </div>
+    </div>
+    <!-- End of Navigation -->
+
+    <!-- Create Plan Section -->
+    <main class="plan-container" id="plan-container">
+      <!-- Plan Heading Section -->
+      <div class="plan-heading">
+        <div class="plan-heading-text-box">
+          <h2 class="text-1 plan-heading-title">Create plan</h2>
+          <p class="text plan-heading-text">
+            Build a subscription plan that best fits your needs. We offer an
+            assortment of the best artisan coffees from around the globe
+            delivered fresh to your door.
+          </p>
+        </div>
+      </div>
+      <!-- End of Plan Heading Section -->
+
+      <!-- Plan How it works Section -->
+      <div class="plan-steps">
+        <div class="plan-steps-circle-line-wrapper">
+          <div class="plan-steps-circle"></div>
+          <div class="plan-steps-line"></div>
+          <div class="plan-steps-circle"></div>
+          <div class="plan-steps-line"></div>
+          <div class="plan-steps-circle"></div>
+        </div>
+        <div class="plan-steps-card-wrapper">
+          <div class="plan-steps-card">
+            <h2 class="text-1 plan-steps-number">01</h2>
+            <h2 class="text-3 plan-steps-title">Pick your coffee</h2>
+            <p class="text plan-steps-text">
+              Select from our evolving range of artisan coffees. Our beans are
+              ethically sourced and we pay fair prices for them. There are new
+              coffees in all profiles every month for you to try out.
+            </p>
+          </div>
+          <div class="plan-steps-card plan-steps-card-2">
+            <h2 class="text-1 plan-steps-number">02</h2>
+            <h2 class="text-3 plan-steps-title">Choose the frequency</h2>
+            <p class="text plan-steps-text">
+              Customize your order frequency, quantity, even your roast style
+              and grind type. Pause, skip or cancel your subscription with no
+              commitment through our online portal.
+            </p>
+          </div>
+          <div class="plan-steps-card">
+            <h2 class="text-1 plan-steps-number">03</h2>
+            <h2 class="text-3 plan-steps-title">Receive and enjoy!</h2>
+            <p class="text plan-steps-text">
+              We ship your package within 48 hours, freshly roasted. Sit back
+              and enjoy award-winning world-class coffees curated to provide a
+              distinct tasting experience.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End of Plan How it works Section -->
+
+      <!-- Plan Form Section -->
+      <div class="form-container">
+        <div class="form-side">
+          <div class="form-side-option side-preferences change">
+            <h2 class="text-4 form-side-number side-01">01</h2>
+            <h2 class="text-4 form-side-text">Preferences</h2>
+          </div>
+          <div class="form-side-option side-bean-type">
+            <h2 class="text-4 form-side-number side-02">02</h2>
+            <h2 class="text-4 form-side-text">Bean Type</h2>
+          </div>
+          <div class="form-side-option side-quantity">
+            <h2 class="text-4 form-side-number side-03">03</h2>
+            <h2 class="text-4 form-side-text">Quantity</h2>
+          </div>
+          <div class="form-side-option side-grind">
+            <h2 class="text-4 form-side-number side-04">04</h2>
+            <h2 class="text-4 form-side-text">Grind Option</h2>
+          </div>
+          <div class="form-side-option side-deliveries form-side-option-last">
+            <h2 class="text-4 form-side-number side-05">05</h2>
+            <h2 class="text-4 form-side-text">Deliveries</h2>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <!-- How Drink Coffee Section  -->
+          <div class="form-section-wrapper how-title">
+            <div class="form-section-title-wrapper">
+              <h2 class="text-2 form-section-main-title">
+                How do you drink your coffee?
+              </h2>
+              <div class="form-section-arrow"></div>
+            </div>
+
+            <form class="form-selection how-btns change" name="form1">
+              <label for="capsule">
+                <input
+                  type="radio"
+                  id="capsule"
+                  class="form-selection-capsule"
+                  value="capsule"
+                  name="howradio"
+                />
+                <div class="form-selection-btn">
+                  <h3 class="text-4 form-selection-btn-title">Capsule</h3>
+                  <p class="form-selection-btn-text">
+                    Compatible with Nespresso systems and similar brewers
+                  </p>
+                </div>
+              </label>
+
+              <label for="filter" class="form-selection-2">
+                <input
+                  type="radio"
+                  id="filter"
+                  class="form-selection-filter"
+                  value="filter"
+                  name="howradio"
+                />
+                <div class="form-selection-btn">
+                  <h3 class="text-4 form-selection-btn-title">Filter</h3>
+                  <p class="form-selection-btn-text text">
+                    For pour over or drip methods like Aeropress, Chemex, and
+                    V60
+                  </p>
+                </div>
+              </label>
+
+              <label for="espresso">
+                <input
+                  type="radio"
+                  id="espresso"
+                  class="form-selection-espresso"
+                  value="espresso"
+                  name="howradio"
+                />
+                <div class="form-selection-btn">
+                  <h3 class="text-4 form-selection-btn-title">Espresso</h3>
+                  <p class="form-selection-btn-text text">
+                    Compatible with Nespresso systems and similar brewers
+                  </p>
+                </div>
+              </label>
+            </form>
+          </div>
+          <!-- End of How Drink Coffee Section  -->
+
+          <!-- Type of Coffee Section  -->
+          <div class="form-section-wrapper">
+            <div class="form-section-title-wrapper type-title">
+              <h3 class="text-2 form-section-main-title">
+                What type of coffee?
+              </h3>
+              <div class="form-section-arrow"></div>
+            </div>
+
+            <form class="form-selection type-btns">
+              <label for="origin">
+                <input
+                  type="radio"
+                  id="origin"
+                  class="form-selection-origin"
+                  value="origin"
+                  name="radio-2"
+                />
+                <div class="form-selection-btn">
+                  <h4 class="text-4 form-selection-btn-title">Single Origin</h4>
+                  <p class="form-selection-btn-text text">
+                    Distinct, high quality coffee from a specific family-owned
+                    farm
+                  </p>
+                </div>
+              </label>
+
+              <label for="decaf" class="form-selection-2">
+                <input
+                  type="radio"
+                  id="decaf"
+                  class="form-selection-decaf"
+                  value="decaf"
+                  name="radio-2"
+                />
+                <div class="form-selection-btn">
+                  <h4 class="text-4 form-selection-btn-title">Decaf</h4>
+                  <p class="form-selection-btn-text text">
+                    Just like regular coffee, except the caffeine has been
+                    removed
+                  </p>
+                </div>
+              </label>
+
+              <label for="blended">
+                <input
+                  type="radio"
+                  id="blended"
+                  class="form-selection-blended"
+                  value="blended"
+                  name="radio-2"
+                />
+                <div class="form-selection-btn">
+                  <h4 class="text-4 form-selection-btn-title">Blended</h4>
+                  <p class="form-selection-btn-text text">
+                    Combination of two or three dark roasted beans of organic
+                    coffees
+                  </p>
+                </div>
+              </label>
+            </form>
+          </div>
+          <!-- End of Type of Coffee Section  -->
+
+          <!-- Amount of Coffee Section  -->
+          <div class="form-section-wrapper">
+            <div class="form-section-title-wrapper amount-title">
+              <h3 class="text-2 form-section-main-title">
+                How much would you like?
+              </h3>
+              <div class="form-section-arrow"></div>
+            </div>
+
+            <form class="form-selection amount-btns">
+              <label for="amount-250">
+                <input
+                  type="radio"
+                  id="amount-250"
+                  class="form-selection-amount-250"
+                  value="amount-250"
+                  name="radio-3"
+                />
+                <div class="form-selection-btn">
+                  <h4 class="text-4 form-selection-btn-title">250g</h4>
+                  <p class="form-selection-btn-text text">
+                    Perfect for the solo drinker. Yields about 12 delicious
+                    cups.
+                  </p>
+                </div>
+              </label>
+
+              <label for="amount-500" class="form-selection-2">
+                <input
+                  type="radio"
+                  id="amount-500"
+                  class="form-selection-amount-500"
+                  value="amount-500"
+                  name="radio-3"
+                />
+                <div class="form-selection-btn">
+                  <h4 class="text-4 form-selection-btn-title">500g</h4>
+                  <p class="form-selection-btn-text text">
+                    Perfect option for a couple. Yields about 40 delectable
+                    cups.
+                  </p>
+                </div>
+              </label>
+
+              <label for="amount-1000">
+                <input
+                  type="radio"
+                  id="amount-1000"
+                  class="form-selection-amount-1000"
+                  value="amount-1000"
+                  name="radio-3"
+                />
+                <div class="form-selection-btn">
+                  <h4 class="text-4 form-selection-btn-title">1000g</h4>
+                  <p class="form-selection-btn-text text">
+                    Perfect for offices and events. Yields about 90 delightful
+                    cups.
+                  </p>
+                </div>
+              </label>
+            </form>
+          </div>
+          <!-- End of Amount of Coffee Section  -->
+
+          <!-- Grind of Coffee Section  -->
+          <div class="form-section-wrapper">
+            <div class="form-section-title-wrapper grind-title">
+              <h3 class="text-2 form-section-main-title">
+                Want us to grind them?
+              </h3>
+              <div class="form-section-arrow"></div>
+            </div>
+
+            <form class="form-selection grind-btns">
+              <label for="wholebean">
+                <input
+                  type="radio"
+                  id="wholebean"
+                  class="form-selection-wholebean"
+                  value="wholebean"
+                  name="radio-4"
+                />
+                <div class="form-selection-btn">
+                  <h4 class="text-4 form-selection-btn-title">Wholebean</h4>
+                  <p class="form-selection-btn-text text">
+                    Best choice if you cherish the full sensory experience
+                  </p>
+                </div>
+              </label>
+
+              <label for="filter2" class="form-selection-2">
+                <input
+                  type="radio"
+                  id="filter2"
+                  class="form-selection-filter-2"
+                  value="filter2"
+                  name="radio-4"
+                />
+                <div class="form-selection-btn">
+                  <h4 class="text-4 form-selection-btn-title">Filter</h4>
+                  <p class="form-selection-btn-text text">
+                    For drip or pour-over coffee methods such as V60 or
+                    Aeropress
+                  </p>
+                </div>
+              </label>
+
+              <label for="cafetiere">
+                <input
+                  type="radio"
+                  id="cafetiere"
+                  class="form-selection-cafetiere"
+                  value="cafetiere"
+                  name="radio-4"
+                />
+                <div class="form-selection-btn">
+                  <h4 class="text-4 form-selection-btn-title">Cafetiére</h4>
+                  <p class="form-selection-btn-text text">
+                    Course ground beans specially suited for french press coffee
+                  </p>
+                </div>
+              </label>
+            </form>
+          </div>
+          <!-- End of Grind of Coffee Section  -->
+
+          <!-- Deliver of Coffee Section  -->
+          <div class="form-section-wrapper">
+            <div class="form-section-title-wrapper deliver-title">
+              <h3 class="text-2 form-section-main-title">
+                How often should we deliver?
+              </h3>
+              <div class="form-section-arrow"></div>
+            </div>
+
+            <form class="form-selection deliver-btns">
+              <label for="week">
+                <input
+                  type="radio"
+                  id="week"
+                  class="form-selection-week"
+                  value="week"
+                  name="radio-5"
+                />
+                <div class="form-selection-btn">
+                  <h4 class="text-4 form-selection-btn-title">Every week</h4>
+                  <p class="form-selection-btn-text text text-weekly">
+                    $<span>(depends on amount)</span> per shipment. Includes
+                    free first-class shipping.
+                  </p>
+                </div>
+              </label>
+
+              <label for="bi-weekly" class="form-selection-2">
+                <input
+                  type="radio"
+                  id="bi-weekly"
+                  class="form-selection-bi-weekly"
+                  value="bi-weekly"
+                  name="radio-5"
+                />
+                <div class="form-selection-btn form-selection-btn-biweek">
+                  <h4 class="text-4 form-selection-btn-title">Every 2 weeks</h4>
+                  <p class="form-selection-btn-text text text-biweekly">
+                    $<span>(depends on amount)</span> per shipment. Includes
+                    free priority shipping.
+                  </p>
+                </div>
+              </label>
+
+              <label for="month">
+                <input
+                  type="radio"
+                  id="month"
+                  class="form-selection-month"
+                  value="month"
+                  name="radio-5"
+                />
+                <div class="form-selection-btn">
+                  <h4 class="text-4 form-selection-btn-title">Every month</h4>
+                  <p class="form-selection-btn-text text text-monthly">
+                    $<span>(depends on amount)</span> per shipment. Includes
+                    free priority shipping.
+                  </p>
+                </div>
+              </label>
+            </form>
+          </div>
+          <!-- End of Deliver of Coffee Section  -->
+          <!-- Plan Order Summary -->
+          <div class="plan-order-container">
+            <p class="plan-order-title text">ORDER SUMMARY</p>
+            <p class="order-text order-text-default">
+              “I drink my coffee as <span class="how-type3">_____</span>, with a
+              <span class="coffee-type3">_____</span> type of bean.
+              <span class="amount-type3">_____</span> ground ala
+              <span class="grind-type3">_____</span> , sent to me
+              <span class="delivery-type3">_____</span>.”
+            </p>
+            <p class="order-text order-text-capsule hidden">
+              “I drink my coffee using <span class="how-type4">_____</span>,
+              with a <span class="coffee-type4">_____</span> type of bean.
+              <span class="amount-type4">_____</span> , sent to me
+              <span class="delivery-type4">_____</span>.”
+            </p>
+          </div>
+          <div class="order-btn-container">
+            <button class="btn-main order-btn order-create-plan-btn">
+              Create your plan
+            </button>
+          </div>
+
+          <!-- End of Plan Order Summary -->
+        </div>
+      </div>
+      <!-- End of Plan Form Section -->
+    </main>
+    <!-- End of Create Plan Section -->
+
+    <!-- Footer Styles -->
+    <footer class="footer">
+      <div class="footer-logo">
+        <div class="footer-logo-links">
+          <div class="footer-logo">
+            <img
+              src="../assets/shared/desktop/logo-beans.svg"
+              alt="coffee beans"
+              class="footer-logo-bean"
+            />
+            <img
+              src="../assets/shared/desktop/logo-text.svg"
+              alt="coffeeroasters"
+              class="footer-logo-text"
+            />
+          </div>
+          <div class="footer-links">
+            <a
+              href="../index.html"
+              class="footer-btn btn nav-text footer-nav-home"
+            >
+              home
+            </a>
+            <a
+              href="./about.html"
+              class="footer-btn btn footer-btn-2 nav-text footer-nav-about"
+            >
+              about
+            </a>
+            <a
+              href="./plan.html"
+              class="footer-btn btn nav-text footer-nav-plan"
+            >
+              create your plan
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-social-links">
+        <a href="#" class="footer-social-link">
+          <img
+            src="../assets/shared/desktop/icon-facebook.svg"
+            alt="facebook logo"
+            class="footer-social-img"
+          />
+        </a>
+        <a href="#" class="footer-social-link footer-social-link-2">
+          <img
+            src="../assets/shared/desktop/icon-twitter.svg"
+            alt="twitter logo"
+            class="footer-social-img"
+          />
+        </a>
+        <a href="#" class="footer-social-link">
+          <img
+            src="../assets/shared/desktop/icon-instagram.svg"
+            alt="instagram logo"
+            class="footer-social-img"
+          />
+        </a>
+      </div>
+    </footer>
+    <!-- End of Footer Styles -->
+
+    <script src="./script2.js"></script>
+  </body>
+</html>
