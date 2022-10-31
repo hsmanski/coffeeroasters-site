@@ -2,7 +2,7 @@
 
 # Frontend Mentor - CoffeeRoasters Subscription Website Solution
 
-This is a solution to the [Coffeeroasters subscription website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/coffeeroasters-subscription-site-5Fc26HVY6). Frontend Mentor has helped me improve my coding skills by building realistic projects using Figma Design Files.
+This is my solution to the [Coffeeroasters subscription website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/coffeeroasters-subscription-site-5Fc26HVY6). Frontend Mentor has helped me improve my coding skills by building realistic projects using Figma Design Files.
 
 ## Table of contents
 
